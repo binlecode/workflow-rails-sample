@@ -1,4 +1,5 @@
-source 'https://rubygems.org'
+#source 'https://rubygems.org'
+source 'http://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
@@ -39,6 +40,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 # workflow library
 gem 'workflow-activerecord', '>= 4.1pre', '< 6.0'
+
+# ruby interface to the GraphViz graphing tool for workflow graph rendering
+gem 'ruby-graphviz', '1.2.4'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
